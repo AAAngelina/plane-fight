@@ -48,6 +48,9 @@ const renderer = createRenderer({
     createText(text){    
         return new Text(text);
     },
+    setText(el,text){
+        el.text = text
+    },
     nextSibling() {},
     createComment() {}
 });
